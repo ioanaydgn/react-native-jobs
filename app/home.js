@@ -2,20 +2,20 @@ import { useState } from "react";
 import { SafeAreaView, ScrollView, View } from "react-native";
 import { Stack, useRouter } from "expo-router";
 
-import { COLORS, images, icons, SIZES } from "../constants";
+import { COLORS, icons, images, SIZES } from "../constants";
 import {
-    Nearbyjobs,
-    Popularjobs,
-    ScreenHeaderBtn,
-    Welcome,
-  } from "../components";
+  Nearbyjobs,
+  Popularjobs,
+  ScreenHeaderBtn,
+  Welcome,
+} from "../components";
 
 const Home = () => {
-    const router = useRouter();
-    const [searchTerm, setSearchTerm] = useState("");
+  const router = useRouter()
+  const [searchTerm, setSearchTerm] = useState("");
 
-    return(
-        <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
+  return (
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       <Stack.Screen
         options={{
           headerStyle: { backgroundColor: COLORS.lightWhite },
